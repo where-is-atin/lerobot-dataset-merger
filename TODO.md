@@ -1,11 +1,16 @@
 # TODO
 ## RUN (e2e)
 - [ ] merge each
-  - [ ] merge data
+  - [ ] merge data (ep.parquet)
     - [x] what is chunks_size exactly
       """Max number of episodes per chunk."""
+
     - [x] tasks how merge?
-      -
+      - tasks are frame+episode-level, so can just retain col values
+    - [x] index recalc
+      - global counter, sort each file and recalc in total. maybe also efficient to only do one. unsure if order matters here.
+    - [x] episode_index recalc
+      - sorted per dataset and concat
   - [ ] merge videos
   - [ ] merge meta
 - [ ] verify above by trying to train like a single dataset or something
