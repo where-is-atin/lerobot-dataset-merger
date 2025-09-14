@@ -1,5 +1,5 @@
-# README (LeRobot Dataset Merger)
+# LeRobot Dataset Merger
 
 * Be able to merge and split datasets
-* Global statsand frame index recalc efficiently
+* Global stats and frame index recalc efficiently
 * Package as composable over Lerobot: drop-in
